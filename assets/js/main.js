@@ -79,4 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const panel = document.getElementById(tabBtn.dataset.tabTarget);
     if (panel) panel.classList.add("active");
   });
+
+  // Confirm before downloading files (catalog, CE certificates, technical report)
+  // so the click doesn't silently fire off a browser download the user didn't notice.
+  const isEn = document.documentElement.lang === "en";
+  document.querySelectorAll("a[download]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const name = link.getAttribute("download") || link.textContent.trim();
+      const msg = isEn
+        ? `Download "${name}"?`
+        : `"${name}" 파일을 다운로드하시겠습니까?`;
+      if (!confirm(msg)) {
+        e.preventDefault();
+      }
+    });
+  });
 });
