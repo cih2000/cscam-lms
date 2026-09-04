@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSCAM LMS | リニアモーター搬送システム</title>
+<meta name="description" content="CSCAM株式会社 LMS — 組立・検査ラインに向けた高速高精度キャリア搬送ソリューション(リニアモーター搬送システム)。LMSコイル、専用ドライバ及びEtherCAT通信技術をすべて自社開発。">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="family-bar">
+  <div class="family-bar-inner">
+    <span class="family-bar-label">CSCAM LMS事業部</span>
+    <nav class="family-bar-nav">
+      <a href="https://cnc.cscam.co.kr/jp/index.html">CNC Controller</a>
+      <a class="active" href="index.html">LMS Solution</a>
+      <a href="https://3dp.cscam.co.kr/?lang=jp">3D Printer</a>
+      <a href="https://laser.cscam.co.kr/?lang=jp">Laser Patterning</a>
+      <a href="https://marking.cscam.co.kr/?lang=jp">Marking Machine</a>
+      <a href="https://sw.cscam.co.kr/?lang=jp">SW Solution</a>
+    </nav>
+  </div>
+</div>
+
+<header class="site-header" style="top:32px;">
+  <div class="container">
+    <a href="index.html" class="logo"><small>CSCAM Co., Ltd.</small><div class="logo-title">LMS SOLUTION</div></a>
+    <nav class="gnb">
+      <a href="#lms-intro" data-nav-target="lms-intro">LMS概要</a>
+      <a href="#lms-solution" data-nav-target="lms-solution">LMSソリューション</a>
+      <a href="#lms-product" data-nav-target="lms-product">LMS製品</a>
+      <a href="#cases" data-nav-target="cases">導入事例</a>
+      <a href="#contact" data-nav-target="contact">お問い合わせ</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-utility">
+        <a class="brand-wordmark-link" href="https://cscam.co.kr/jp/index.html" aria-label="CSCAM Corporate Home"><div class="brand-wordmark"><b>CS</b><span>CAM</span></div></a>
+        <div class="brand-divider"></div>
+        <div class="lang-switch"><a href="../index.html">KO</a><span class="lang-sep">/</span><a href="../en/index.html">EN</a><span class="lang-sep">/</span><a href="../zh/index.html">CH</a><span class="lang-sep">/</span><a class="active" href="../jp/index.html">JP</a></div>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="header-spacer" style="height:calc(var(--header-h) + 32px);"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"><div class="hero-scanline"></div></div>
+  <div class="hero-scrim"></div>
+  <div class="container">
+    <div class="hero-row">
+    <div class="hero-inner">
+      <div class="hero-badge"><span>LINEAR MOTION SYSTEM</span> 高速高精度キャリア搬送ソリューション</div>
+      <div class="hero-kicker">LCS Series · Linear Motion System</div>
+      <h1>サーボ制御技術とソフトウェアに基づく<br><em>リニアモーター搬送システム</em></h1>
+      <p class="lede">組立・検査ラインに向けた高速高精度キャリア搬送ソリューション。LMSコイル、専用ドライバ及びEtherCAT通信をすべて自社開発。</p>
+      <div class="hero-links">
+        <a href="#lms-solution" class="hero-link">
+          <span class="dot"></span>
+          <div>
+            <b>LMS ソリューション</b>
+            <small>構成、性能、経路設計</small>
+          </div>
+        </a>
+        <a href="#cases" class="hero-link">
+          <span class="dot"></span>
+          <div>
+            <b>導入事例</b>
+            <small>OHCV · LCDバックライト · 大型テレビ · LCD貼合ライン</small>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="hero-video">
+      <video autoplay loop muted playsinline poster="../assets/img/hero-video-poster.jpg">
+        <source src="../assets/video/hero-lms-bonding.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-cap">LCD貼合・検査ライン</div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01. LMS Overview -->
+<section class="section" id="lms-intro" data-section="lms-intro">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">01 / 事業概要</div>
+      <h2 class="section-title">CSCAM独自技術で完成させた<br>リニアモーター搬送システム。</h2>
+      <p class="section-desc">CSCAM株式会社はサーボ制御、制御通信、PLC統合及び運転ソフトウェアなどの独自技術により、優れた搬送システムを開発しています。LMSシステムは直接的な物理接触なしで各キャリアを独立駆動し、柔軟な搬送環境を実現します。</p>
+    </div>
+    <div class="teaser-grid">
+      <a class="teaser-card" href="#lms-solution">
+        <div class="teaser-card-top"><span class="teaser-num">01</span><span class="teaser-cat">SOLUTION</span></div>
+        <h3 class="teaser-title">LMSソリューション</h3>
+        <div class="teaser-subtitle">Linear Motion System · LCSシリーズ</div>
+        <p>LMSソリューションは組立・検査ラインに向けた高速高精度キャリア搬送方式です。各キャリアを個別制御でき、混流生産、工程分岐、差別化速度などスマートファクトリー搬送制御を実現します。クリーンルーム、真空、不活性ガス、高温及び薬品暴露などの特殊環境下でも運転可能です。ほぼ任意の形状の軌道を構成できる能力により、物流自動化レイアウトに革新をもたらします。CSCAM独自のサーボ・モーション制御技術に基づき、高速小型物流から大容量重量物物流まで、用途に合わせたソリューションを提供します。</p>
+        <div class="more">LMSソリューションを見る →</div>
+      </a>
+      <a class="teaser-card" href="#cases">
+        <div class="teaser-card-top"><span class="teaser-num">02</span><span class="teaser-cat">REFERENCES</span></div>
+        <h3 class="teaser-title">導入事例</h3>
+        <div class="teaser-subtitle">LCD · TVライン · OHCV / バックライト / 貼合</div>
+        <p>CSCAMはLCD、TVパネルなどの高付加価値製品向けに、組立・検査・エージング工程の搬送ラインを構築してきた豊富な経験と技術を有しています。導入事例は数十個のコイルを使用する大型テレビ検査ラインから、数百個のコイルを使用するLCDバックライト検査ラインまで、負荷範囲50kgから1.5トン、搬送速度400mm/sから1,000mm/sに及び、専任の技術サポートチームが対応します。</p>
+        <div class="more">導入事例を見る →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 02. LMS Solution -->
+<section class="section alt" id="lms-solution" data-section="lms-solution">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">02 / LMSソリューション</div>
+      <h2 class="section-title">ケーブル不要、キャリア独立駆動の<br>可動磁石式物流システム。</h2>
+      <p class="section-desc">キャリア搬送は各コイルが順次連続動作することで実現され、キャリア位置制御は入口部のホールセンサーに基づいて行われます。従来のコイル(モーター)方式とは異なり、磁石アレイがキャリアに取り付けられキャリアと共に移動します — この構造により追加の外部位置検出センサーが不要です。</p>
+    </div>
+    <div class="app-card">
+      <div class="app-card-img"><img src="../assets/img/tech-advantage-photo.jpg" alt="On-site photo of an LMS carrier transport line"></div>
+      <div class="app-card-text">
+        <div class="tagline">LMS(リニアモーター搬送システム)の利点</div>
+        <ul class="dash">
+          <li>真空環境下でもケーブルレスのキャリア搬送が可能</li>
+          <li>高温及び特殊環境下で複数のキャリアに対し独立した高速高精度位置制御が可能</li>
+          <li>ホールセンサーによる非接触キャリア位置検出 — 追加のエンコーダ不要</li>
+          <li>直線軌道だけでなく、円形・楕円軌道、エレベーター及び横搬送にも対応</li>
+          <li>キャリアが待機不要で生産効率を最大化、ほぼ任意の形状の軌道により物流自動化レイアウトに革新をもたらす</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">02-1 / LMSソリューション構成</div>
+    </div>
+    <div class="split">
+      <div class="split-media flush">
+        <div class="panel-body"><img src="../assets/img/solutions-architecture.jpg" alt="LMS solution configuration - PLC, CPACK, EtherCAT, Drive, Coil architecture diagram"></div>
+      </div>
+      <div class="split-text">
+        <div class="feature-box">
+          <div class="panel-head">LMS SOLUTION CONFIGURATION</div>
+          <ol class="feature-list">
+            <li><span class="num">01</span><span>CPACKとLCSシリーズで構成、上位PLC(三菱)と互換性があり、既存のユーザーHMIをそのまま活用可能。</span></li>
+            <li><span class="num">02</span><span>1台のCPACK制御ユニットで最大255台のドライバ接続に対応、最大4台のドライバを接続可能なパッケージ型ドライバを採用。</span></li>
+            <li><span class="num">03</span><span>1台のPLCで最大3台のCPACK制御ユニットを接続可能。</span></li>
+          </ol>
+          <a class="feature-box-link" href="../assets/docs/LMS-catalog-2026.pdf" download="CSCAM_LMS_Catalog_2026.pdf"><span class="ico">⬇</span>LMS製品カタログをダウンロード(PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">02-2 / LMS性能</div>
+    </div>
+    <div class="app-card reverse">
+      <div class="app-card-img"><img src="../assets/img/performance-photo.jpg" alt="Close-up photo of the LMS coil and carrier drive assembly"></div>
+      <div class="app-card-text">
+        <div class="tagline">PERFORMANCE</div>
+        <ul class="dash">
+          <li><b>広範な負荷・搬送範囲</b>:小型部品から最大1.5トンの重量物まで幅広い範囲をカバー。</li>
+          <li><b>高速搬送</b>:最高5m/sの速度で大型重量物を搬送、優れたコストパフォーマンスと生産性を実現。</li>
+          <li><b>過酷環境下での信頼性</b>:標準ネオジム磁石(70°C)に加え、最高150°C運転対応の高温磁石(サマリウムコバルト磁石)もオプションで提供。</li>
+          <li><b>広いエアギャップ</b>:1–5mmの余裕あるエアギャップにより組付け公差を柔軟に吸収、軌道にわずかな汚れや変形があっても安定した運転を維持。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">02-3 / 2種類のLMSレールタイプ</div>
+    </div>
+    <div class="spec-table-wrap">
+      <div class="spec-table-scroll">
+      <table class="spec-table">
+      <thead><tr><th></th><th>ローラーレール</th><th>LMレール</th></tr></thead>
+      <tbody>
+      <tr><th>繰り返し位置決め精度</th><td>±0.05 ~ ±0.1 mm</td><td>±0.005 ~ ±0.01 mm</td></tr>
+      <tr><th>位置決め精度</th><td>±0.1 ~ ±0.5 mm</td><td>±0.01 ~ ±0.05 mm</td></tr>
+      <tr><th>機械的特性</th><td>スムーズな走行のため、ポリウレタンまたは特殊樹脂ローラーの弾性変形及びレール間の段差により一定のクリアランスが生じる場合あり</td><td>ボール/ローラーの転がり接触による極めて高い剛性、機械的クリアランスは極小</td></tr>
+      <tr><th>用途</th><td>純粋な高速物流区間で優れたコストパフォーマンス;高速運転に有利;作業区間はキャリア固定機構を採用</td><td>距離が伸びるほど設置コストが上昇;位置決め精度に優れる;キャリア静止状態での作業に適する</td></tr>
+      <tr><th>エアギャップ</th><td>1~5mmの範囲で選択可能;エアギャップの維持が精度に不可欠</td><td>1mm以内に固定</td></tr>
+      </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">02-4 / LMS経路設計</div>
+      <h3 class="section-title" style="font-size:22px;">効率的なLMS物流経路設計を実現。</h3>
+    </div>
+    <div class="prod-grid prod-grid-path">
+      <div class="prod-card">
+        <div class="panel-head-plain">直線入出庫ライン</div>
+        <div class="prod-media"><img src="../assets/img/path-straight.jpg" alt="Straight in/out line layout"></div>
+        <div class="prod-text">
+          <ul class="dash"><li>高速重量物搬送</li><li>最大1.5トン負荷</li></ul>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="panel-head-plain">直線+エレベーター組み合わせ</div>
+        <div class="prod-media"><img src="../assets/img/path-elevator.jpg" alt="Vertical circulation line layout combining straight track and elevator"></div>
+        <div class="prod-text">
+          <ul class="dash"><li>既存の床面積を活用した下層還流</li><li>垂直空間利用率を最大化</li></ul>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="panel-head-plain">直線+楕円軌道組み合わせ</div>
+        <div class="prod-media"><img src="../assets/img/path-oval.jpg" alt="Horizontal circulation line layout combining straight track and oval track"></div>
+        <div class="prod-text">
+          <ul class="dash"><li>楕円軌道による無限循環経路を実現</li></ul>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="panel-head-plain">直線+シャトル軌道組み合わせ</div>
+        <div class="prod-media"><img src="../assets/img/path-ferry.jpg" alt="Parallel line layout combining straight track and ferry track"></div>
+        <div class="prod-text">
+          <ul class="dash"><li>メインラインと直角に搬送するシャトル軌道</li><li>スマートで柔軟な工程分岐を実現</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">02-5 / LMS搬送制御・ソフトウェア例</div>
+      <h3 class="section-title" style="font-size:22px;">LMS HMI画面例</h3>
+    </div>
+    <div class="equip-grid cols-2">
+      <div class="equip-item"><div class="thumb"><img src="../assets/img/hmi-transfer.jpg" alt="Overall logistics HMI screen"></div><span>全体物流</span></div>
+      <div class="equip-item"><div class="thumb"><img src="../assets/img/hmi-manual.jpg" alt="Manual operation HMI screen"></div><span>手動操作</span></div>
+      <div class="equip-item"><div class="thumb"><img src="../assets/img/hmi-load-monitoring.jpg" alt="Load ratio monitoring HMI screen"></div><span>負荷率モニタリング</span></div>
+      <div class="equip-item"><div class="thumb"><img src="../assets/img/hmi-teaching.jpg" alt="Teaching HMI screen"></div><span>ティーチング</span></div>
+    </div>
+    <p style="font-size:11.5px;color:var(--muted);margin-top:16px;">* 表示されているHMIは代表的な構成例であり、実際の導入する物流ラインのレイアウトと環境に合わせてカスタマイズ可能です。</p>
+
+    <div class="section-head" style="margin-top:32px;">
+      <h3 class="section-title" style="font-size:22px;">キャリア速度・加速度推奨ソフトウェア</h3>
+      <p class="section-desc">搬送運動の数値を入力するだけで最適なLMSコイル推奨案が得られ、予想負荷率とサイクルタイムを確認可能。</p>
+    </div>
+    <div class="frame"><img src="../assets/img/calc-screenshot.jpg" alt="LMS Thrust Calculation and Model Selection tool screen"></div>
+    <div class="io-flow" style="margin-top:24px;">
+      <div class="io-col">
+        <div class="io-col-head"><span class="io-icon">In</span>入力</div>
+        <div class="io-chip-grid">
+          <div class="io-chip">ストローク距離 [mm]</div>
+          <div class="io-chip">テーブル重量 [kg]</div>
+          <div class="io-chip">運転速度 [m/sec]</div>
+          <div class="io-chip">ワーク重量 [kg]</div>
+          <div class="io-chip">加速度 [g] / 減速度 [g]</div>
+          <div class="io-chip">レール面摩擦係数 μ</div>
+        </div>
+      </div>
+      <div class="io-arrow">
+        <div class="io-arrow-line"></div>
+        <div class="io-arrow-label">計算ソフトウェア</div>
+      </div>
+      <div class="io-col">
+        <div class="io-col-head io-col-head-result"><span class="io-icon">Out</span>出力</div>
+        <div class="io-chip io-chip-result">速度プロファイル(到達時間 [sec])</div>
+        <div class="io-chip io-chip-result">推奨LMSコイル型式</div>
+        <div class="io-chip io-chip-result">予想負荷率(加速、定速)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03. LMS Products -->
+<section class="section" id="lms-product" data-section="lms-product">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">03 / LMS製品</div>
+      <h2 class="section-title">高温、高真空及びその他の特殊環境向けに<br>設計されたLMS製品ライン。</h2>
+      <p class="section-desc">CSCAMはLMSコイル、専用ドライバ及びEtherCATマスターソフトウェアなど全コンポーネントを自社で生産・提供しています。汎用ラダーロジックによるPLC制御で、他工程との連携・統合が容易です。LMSコイルはデュアルホールセンサーを内蔵し精密な位置制御を実現、コイル設計はコンパクトかつ放熱性能を最適化しています。冗長化されたEtherCAT通信配線により通信断線にも対応、専用通信コアはカスタム開発にも対応しています。</p>
+    </div>
+    <div class="prod-grid prod-grid-4">
+      <div class="prod-card">
+        <div class="prod-text">
+          <h3>PLCとHMI</h3>
+          <ul class="dash">
+            <li>オペレーターHMI画面設計(Profaceなど)</li>
+            <li>1台のPLCで最大3台のCPACK制御ユニットを接続可能</li>
+            <li>イーサネット(MX component)通信</li>
+          </ul>
+        </div>
+        <div class="prod-media"><img src="../assets/img/prod-plc-hmi.jpg" alt="PLC & HMI product photo"></div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-text">
+          <h3>CPACK:制御ユニット</h3>
+          <ul class="dash">
+            <li>1台のCPACK制御ユニットで最大255台のドライバを接続可能</li>
+            <li>上位ホスト(MXComponent)との共有メモリ通信に対応</li>
+            <li>下位ドライバとのリアルタイムEtherCAT通信を実現</li>
+          </ul>
+        </div>
+        <div class="prod-media"><img src="../assets/img/prod-cpack.jpg" alt="CPACK Control unit product photo"></div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-text">
+          <h3>LMSパッケージ型ドライバ</h3>
+          <ul class="dash">
+            <li>2chエンコーダ入力(BiSS-C)、EtherCAT CSVモード</li>
+            <li>主回路:AC200~230V +10~-15% 50/60Hz</li>
+            <li>パッケージ型ドライバ:最大4台の2~3kWドライバを接続可能</li>
+            <li>単独LMSドライバ(400W、800W、1.5kW、2kW、3kW)にも対応</li>
+          </ul>
+        </div>
+        <div class="prod-media"><img src="../assets/img/prod-package-drive.jpg" alt="LMS Package Drive product photo"></div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-text">
+          <h3>LMSコイル/マグネット</h3>
+          <ul class="dash">
+            <li>LMSコイルシリーズ(幅30/50/100、長さ200/260/380)</li>
+            <li>エアギャップ:1~5mm · 磁極ピッチ:30mm</li>
+            <li>スキュー角:19.5°(30T) · 6°(50T) · 4°(100T)</li>
+          </ul>
+        </div>
+        <div class="prod-media"><img src="../assets/img/prod-coil-magnet.jpg" alt="LMS Coil / Magnet product photo"></div>
+      </div>
+    </div>
+
+<!-- 03-1. LMS Coil -->
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">03-1 / LMSコイル</div>
+      <h2 class="section-title">コイルタイプ</h2>
+      <p class="section-desc">コイル型式名は下記の順序で表記されます。<直线电机-线圈宽度-线圈长度-编码器类型>エンコーダタイプはA(アブソリュート式)、I(インクリメンタル式)、D(デュアルインクリメンタル式)に分かれます。</p>
+    </div>
+    <div class="frame classification-frame coil"><img src="../assets/img/coil-classification.jpg" alt="LMS Coil Classification - LCS-50A-260L-D code structure"></div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <h3 class="section-title" style="font-size:22px;">コイル仕様</h3>
+    </div>
+    <div class="spec-table-wrap">
+      <div class="spec-table-scroll">
+      <table class="spec-table narrow-th">
+      <thead><tr><th>仕様</th><th>30A196L</th><th>30A260L</th><th>30A260L-HJ</th><th>50A200L</th><th>50A260L</th><th>50A380L</th><th>100A260L</th><th>100A380L</th></tr></thead>
+      <tbody>
+      <tr><th>連続推力 [N]*</th><td>167</td><td>218</td><td>246</td><td>279</td><td>385</td><td>530</td><td>725</td><td>1,150</td></tr>
+      <tr><th>最大推力 [N]</th><td>323</td><td>420</td><td>692</td><td>538</td><td>678</td><td>1,023</td><td>1,300</td><td>2,046</td></tr>
+      <tr><th>連続電流 [A rms]</th><td>3.0</td><td>4.0</td><td>5.8</td><td>4.5</td><td>6</td><td>8</td><td>8.2</td><td>12</td></tr>
+      <tr><th>最大電流 [A rms]</th><td>6.3</td><td>8.4</td><td>12</td><td>9</td><td>12</td><td>16</td><td>17.1</td><td>25</td></tr>
+      <tr><th>抵抗 [Ω]</th><td>4.51</td><td>5.00</td><td>5.82</td><td>5.25</td><td>5.82</td><td>6.08</td><td>3.75</td><td>1.20</td></tr>
+      <tr><th>インダクタンス [mH]</th><td>28.62</td><td>20.59</td><td>30.30</td><td>30.02</td><td>21.60</td><td>32.40</td><td>35.00</td><td>35.60</td></tr>
+      <tr><th>吸着力 [N]*</th><td>400</td><td>519</td><td>589</td><td>666</td><td>866</td><td>1,265</td><td>1,730</td><td>2,530</td></tr>
+      <tr><th>逆起電力 [V rms/m/sec]</th><td>32.4</td><td>32.4</td><td>16.3</td><td>38</td><td>38</td><td>38</td><td>52</td><td>76</td></tr>
+      <tr><th>推力定数 [N/A rms]</th><td>56</td><td>55</td><td>42.4</td><td>62</td><td>64</td><td>66</td><td>75</td><td>88</td></tr>
+      <tr><th>容量 [W]</th><td>300</td><td>400</td><td>400</td><td>400</td><td>750</td><td>1,300</td><td>3,000</td><td>3,000</td></tr>
+      <tr><th>推奨ドライバ</th><td>SD-04AFE</td><td>SD-04AFE</td><td>SD-04AFE</td><td>SD-04AFE</td><td>SD-10AFE</td><td>SD-15AFE</td><td>SD-30AFE</td><td>SD-30AFE</td></tr>
+      <tr><th>定格推力時最高速度 [m/sec]</th><td>3</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2.5</td><td>2</td><td>1</td></tr>
+      </tbody>
+      </table>
+      </div>
+      <p style="font-size:11.5px;color:var(--muted);margin-top:14px;">* 連続推力/吸着力[N]の測定条件は2.5mmエアギャップ。エンコーダ:デュアルエンコーダ(BiSS-C)、16bit分解能、セミアブソリュート方式。製品仕様及び寸法は性能改善により変更される場合があります。</p>
+    </div>
+
+    <div class="spec-tab-nav" style="margin-top:32px;">
+      <button class="spec-tab-btn" data-modal-open="coil-spec-30t" type="button">LCS-30A 詳細仕様を見る</button>
+      <button class="spec-tab-btn" data-modal-open="coil-spec-50t" type="button">LCS-50A 詳細仕様を見る</button>
+      <button class="spec-tab-btn" data-modal-open="coil-spec-100t" type="button">LCS-100A 詳細仕様を見る</button>
+    </div>
+
+    <div class="spec-tab-nav cert-nav">
+      <a class="case-doc-link cert-link" href="../assets/docs/ce-lcs-30a260l.pdf" download="CE_Certificate_LCS-30A260L.pdf"><span class="ico">⬇</span>CE認証(LCS-30A)</a>
+      <a class="case-doc-link cert-link" href="../assets/docs/ce-lcs-50a260l.pdf" download="CE_Certificate_LCS-50A260L.pdf"><span class="ico">⬇</span>CE認証(LCS-50A)</a>
+      <a class="case-doc-link cert-link" href="../assets/docs/ce-lcs-100a380l.pdf" download="CE_Certificate_LCS-100A380L.pdf"><span class="ico">⬇</span>CE認証(LCS-100A)</a>
+    </div>
+
+    <div class="spec-modal-overlay" id="coil-spec-30t">
+      <div class="spec-modal-box spec-modal-box-img">
+        <button class="spec-modal-close" data-modal-close="" type="button">×</button>
+        <img src="../assets/img/spec-popup-30t.jpg" alt="LCS-30A196L · LCS-30A260L · LCS-30A260L-HJ detailed specification">
+      </div>
+    </div>
+    <div class="spec-modal-overlay" id="coil-spec-50t">
+      <div class="spec-modal-box spec-modal-box-img">
+        <button class="spec-modal-close" data-modal-close="" type="button">×</button>
+        <img src="../assets/img/spec-popup-50t.jpg" alt="LCS-50A200L · LCS-50A260L · LCS-50A380L detailed specification">
+      </div>
+    </div>
+    <div class="spec-modal-overlay" id="coil-spec-100t">
+      <div class="spec-modal-box spec-modal-box-img">
+        <button class="spec-modal-close" data-modal-close="" type="button">×</button>
+        <img src="../assets/img/spec-popup-100t.jpg" alt="LCS-100A260L · LCS-100A380L detailed specification">
+      </div>
+    </div>
+
+<!-- 03-2. LMS Drive -->
+    <div class="section-head" style="margin-top:32px;">
+      <div class="eyebrow">03-2 / LMSドライバ</div>
+      <h2 class="section-title">ドライバタイプ</h2>
+      <p class="section-desc">ドライバ型式名は下記の順序で表記されます。<伺服驱动器系列-容量-输入电压-编码器-通信方式>容量は04(400W)/10(1.0kW)/15(1.5kW)/20(2.0kW)/30(3.0kW);入力電圧はA(200V)/B(400V);エンコーダはF(BiSS);通信方式はE(EtherCAT)。</p>
+    </div>
+    <div class="frame classification-frame drive"><img src="../assets/img/drive-classification.jpg" alt="LMS Drive Classification - SD-04-A-F-E code structure"></div>
+
+    <div class="section-head" style="margin-top:32px;">
+      <h3 class="section-title" style="font-size:20px;">ドライバ仕様</h3>
+    </div>
+    <div class="spec-table-wrap">
+      <div class="spec-table-scroll">
+      <table class="spec-table narrow-th">
+      <thead><tr><th>SDシリーズ</th><th>04A</th><th>10A</th><th>15A</th><th>20A</th><th>30A</th></tr></thead>
+      <tbody>
+      <tr><th>モーター容量 [KW]</th><td>0.4</td><td>0.75</td><td>1.3</td><td>2.0</td><td>3.0</td></tr>
+      <tr><th>定格出力電流 [A]</th><td>3.0</td><td>5.0</td><td>11.0</td><td>13.5</td><td>16.5</td></tr>
+      <tr><th>最大出力電流 [A]</th><td>9.0</td><td>15.0</td><td>28.0</td><td>40.5</td><td>49.5</td></tr>
+      <tr><th>回生抵抗</th><td colspan="5" style="text-align:center;">内蔵</td></tr>
+      <tr><th>主回路 [三相:AC200V]</th><td colspan="5" style="text-align:center;">AC200 ~ 230V +10 ~ -15% 50/60Hz</td></tr>
+      <tr><th>制御回路 [単相:AC200V]</th><td colspan="5" style="text-align:center;">AC200 ~ 230V +10 ~ -15% 50/60Hz</td></tr>
+      </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="spec-links-row" style="margin-top:20px;">
+      <button class="spec-modal-trigger" data-modal-open="drive-function-spec-modal" type="button"><span class="ico">▦</span><span>ドライバ詳細仕様</span></button>
+    </div>
+    <div class="spec-modal-overlay" id="drive-function-spec-modal">
+      <div class="spec-modal-box">
+        <button class="spec-modal-close" data-modal-close="" type="button">×</button>
+        <div class="spec-table-wrap">
+          <div class="stw-title"><span class="ico">▦</span>LMSドライバ詳細機能仕様</div>
+          <div class="spec-table-scroll">
+          <table class="spec-table narrow-th">
+          <thead><tr><th>分類</th><th>項目</th><th>仕様</th></tr></thead>
+          <tbody>
+          <tr><th rowspan="3">検出器</th><td>検出器タイプ</td><td>ホールセンサー</td></tr>
+          <tr><td>出力信号タイプ</td><td>差動ラインドライバ(BiSS-C)</td></tr>
+          <tr><td>検出器仕様と電源</td><td>1回転:65,536(シリアルエンコーダ)/ DC 24V</td></tr>
+          <tr><th rowspan="2">駆動方式</th><td>駆動方式</td><td>正弦波PWM制御(IGBTベース)</td></tr>
+          <tr><td>保護機能</td><td>UVLO(低電圧ロックアウト)、レディ、短絡クランプ、アクティブミラークランプ、デサチュレーション保護、フォルト信号</td></tr>
+          <tr><th>速度制御</th><td>周波数応答</td><td>最大500Hz以上</td></tr>
+          <tr><th></th><td>速度指令入力</td><td>EtherCAT速度指令</td></tr>
+          <tr><th></th><td>加減速方式</td><td>S字カーブ</td></tr>
+          <tr><th>位置制御</th><td>位置入力</td><td>EtherCAT位置指令</td></tr>
+          <tr><th rowspan="3">機能</th><td>保護機能</td><td>過電流、過電圧、過負荷、過熱、過速度、エンコーダ異常、IGBT異常、主電源欠相、不足電圧など</td></tr>
+          <tr><td>通信</td><td>EtherCAT(パラメータ・変数モニタリング)</td></tr>
+          <tr><td>温度検出</td><td>モーター温度、IGBT温度、PCB温度を検出</td></tr>
+          </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04. LMS Installed Cases -->
+<section class="section alt" id="cases" data-section="cases">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">04 / LMS導入事例</div>
+      <h2 class="section-title">高温、高真空などの<br>特殊環境向けLMS導入事例。</h2>
+      <p class="section-desc">CSCAMはLMSコイル、専用ドライバ及びEtherCATマスターソフトウェアなど全コンポーネントを自社で生産・提供しています。汎用ラダーロジックによるPLC制御で、他工程との連携・統合が容易です。LMSコイルはデュアルホールセンサーを内蔵し精密な位置制御を実現、コイル設計はコンパクトかつ放熱性能を最適化しています。冗長化されたEtherCAT通信配線により通信断線にも対応、専用通信コアはカスタム開発にも対応しています。</p>
+    </div>
+
+    <div class="case-block">
+      <div class="case-split">
+        <div class="case-text">
+          <div class="case-tag">CASE 01 · OHCV 大型OLEDテレビフレームライン</div>
+          <h3>OHCV<span class="sep">:</span>大型OLEDテレビフレーム低振動ライン</h3>
+          <p class="desc">大型OLED生産搬送ラインに計9本の搬送ラインを適用、15段のサブトレイを搭載した1.5トンキャリア区間を含む。</p>
+          <ul class="dash">
+            <li>工程:ローディング+物流+エージング</li>
+            <li>コイル:LCS-100A380L(152個のコイル、9台の移動キャリア、1.5トン負荷 · 15段積み)</li>
+            <li>エアギャップ高さ:4mm</li>
+            <li>速度1:400mm/s(1.5トン)、加速時間1.5秒、加速度0.266m/s²(0.027g)</li>
+            <li>速度2:800mm/s</li>
+          </ul>
+        </div>
+        <div class="case-media"><img src="../assets/img/case-ohcv.jpg" alt="On-site photo of the OHCV low-vibration line for large OLED TV frames"></div>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-split media-first">
+        <div class="case-media"><img src="../assets/img/case-lcd-backlight-2.jpg" alt="On-site photo of the LCD Backlight aging and inspection line"></div>
+        <div class="case-text">
+          <div class="case-tag">CASE 02 · LCDバックライトエージングライン</div>
+          <h3>LCDバックライトエージング・検査ライン</h3>
+          <p class="desc">150台以上のキャリアと400個以上のLMSコイルを使用し、本ラインはLCDバックライト貼合後にパネル検査、エージング、機械視覚検査及び外観検査を行う。計2本のラインを設置。</p>
+          <ul class="dash">
+            <li>工程:ローディング+高温エージング/冷却+検査</li>
+            <li>コイル:LCS-30A196L(407個のコイル、150台以上の移動キャリア、50~80kg負荷)</li>
+            <li>エアギャップ:2~3mm</li>
+            <li>速度1:600mm/s、加速時間0.5秒、加速度1.2m/s²(0.12g)</li>
+            <li>速度2:820mm/s</li>
+          </ul>
+          <a class="case-doc-link" href="../assets/docs/LMS-technical-report.pdf" download="LMS_Technical_Report_rev06.pdf"><span class="ico">⬇</span>LMS技術レポートをダウンロード(PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-split">
+        <div class="case-text">
+          <div class="case-tag">CASE 03 · 大型テレビ検査ライン</div>
+          <h3>大型テレビ検査ライン</h3>
+          <ul class="dash">
+            <li>コイル:LCS-30A260L-HJ(41個のコイル、2台の移動キャリア、250kg負荷)</li>
+            <li>エアギャップ:2~5mm</li>
+            <li>速度1:600mm/s、加速時間0.5秒、加速度1.2m/s²(0.12g)</li>
+            <li>速度2:800mm/s</li>
+            <li>速度3:1,000mm/s</li>
+          </ul>
+        </div>
+        <div class="case-media diagram"><img src="../assets/img/case-large-tv-diagram.jpg" alt="Layout drawing of the large TV inspection line"></div>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-split media-first">
+        <div class="case-media"><img src="../assets/img/case-lcd-bonding.jpg" alt="On-site photo of the LCD bonding assembly and inspection line"></div>
+        <div class="case-text">
+          <div class="case-tag">CASE 04 · LCD貼合組立ライン</div>
+          <h3>LCD貼合組立・検査ライン</h3>
+          <p class="desc">各ラインで20台のキャリアと約30個のコイルを使用し、LCDバックライト貼合後にラベル貼付、外観検査、機械視覚検査及びネジ締めを実施。物流フローは循環式——検査は上層で行い、空のキャリアは下層で還流。計4本のラインを構築。</p>
+          <ul class="dash">
+            <li>コイル:LCS-30A160L(28個のコイル、31台の移動キャリア、30kg負荷)</li>
+            <li>エアギャップ:2.5mm</li>
+            <li>速度:500mm/s、加速時間0.25秒、加速度2m/s²(0.2g)</li>
+            <li>工程:ローディング+物流(バーコード貼付、機械視覚検査、ネジ締めなど)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LMS Customers -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Trusted By</div>
+      <h2 class="section-title">主要顧客</h2>
+      <p class="section-desc">韓国を代表するディスプレイメーカー及びパートナー企業がCSCAM LMSを信頼しています。</p>
+    </div>
+    <div class="client-static-grid">
+      <div class="client-logo-card"><img src="../assets/img/clients/lg-display.png" alt="LG Display"><span class="cindustry">OLED / LCDディスプレイ</span></div>
+      <div class="client-logo-card"><img src="../assets/img/clients/fovis.png" alt="Fovis"><span class="cindustry">機械視覚検査装置</span></div>
+      <div class="client-logo-card"><img src="../assets/img/clients/dawonsys.png" alt="DAWONSYS"><span class="cindustry">ディスプレイ自動化設備</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05. Product Inquiries & Division Location -->
+<section class="contact-band" id="contact" data-section="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="eyebrow on-dark">05 / お問い合わせ</div>
+        <h2 class="section-title" style="color:#fff;">製品・お見積りお問い合わせ</h2>
+        <p class="section-desc" style="color:#b8c4d9;">LMSリニアモーター搬送システムの構成及びお見積りについては、以下の情報でご連絡ください。</p>
+        <div class="contact-item">
+          <div class="k">お問い合わせ電話</div>
+          <div class="v">+82-62-946-1900</div>
+        </div>
+        <div class="contact-item">
+          <div class="k">FAX</div>
+          <div class="v small">+82-62-946-1901</div>
+        </div>
+        <div class="contact-item">
+          <div class="k">メール</div>
+          <div class="v small">lms@cscam.co.kr</div>
+        </div>
+        <div class="contact-item">
+          <div class="k">CNC制御・モーター事業部</div>
+          <div class="v small">大韓民国光州広域市光山区平洞産業団地路239-15</div>
+        </div>
+      </div>
+      <div class="map-card">
+        <iframe allowfullscreen="" class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%EA%B4%91%EC%A3%BC+%EA%B4%91%EC%82%B0%EA%B5%AC+%ED%8F%89%EB%8F%99%EC%82%B0%EB%8B%A8%EB%A1%9C+239-15&amp;hl=en&amp;output=embed" title="CSCAM Co., Ltd. map"></iframe>
+        <div class="map-label">
+          <strong>CNC制御・モーター事業部(光州)</strong>
+          <span class="addr">大韓民国光州広域市光山区平洞産業団地路239-15</span>
+          電話:+82-62-946-1900 · FAX:+82-62-946-1901
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-logo">CS<span>CAM</span> LMS</div>
+      <nav class="foot-links">
+        <a href="#lms-intro">LMS概要</a>
+        <a href="#cases">導入事例</a>
+        <a href="#lms-product">製品</a>
+        <a href="#contact">技術資料</a>
+        <a href="#contact">検索 / AIチャットボット</a>
+      </nav>
+    </div>
+    <div class="foot-info">
+      CSCAM Co., Ltd. &middot; 本社:大韓民国光州広域市光山区平洞産業団地路239-15 &middot; 電話 +82-62-946-1900 &middot; FAX +82-62-946-1901 &middot; メール lms@cscam.co.kr<br>
+      Copyright 2026 CSCAM Co., Ltd. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+(function(){
+  window.cscamLocalNavFix = true;
+  var isLocal = location.protocol === "file:";
+  var isGhPages = location.hostname === "cih2000.github.io";
+  if (!isLocal && !isGhPages) return;
+  var map = {
+    "https://cnc.cscam.co.kr/jp/index.html": { local: "../../cscam-cnc/jp/index.html", gh: "https://cih2000.github.io/cscam-cnc/jp/index.html" },
+    "https://3dp.cscam.co.kr/?lang=jp": { local: "../../cscam-3dp/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-3dp/index.html?lang=jp" },
+    "https://laser.cscam.co.kr/?lang=jp": { local: "../../cscam-engraving/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-engraving/index.html?lang=jp" },
+    "https://marking.cscam.co.kr/?lang=jp": { local: "../../cscam-marking/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-marking/index.html?lang=jp" },
+    "https://sw.cscam.co.kr/?lang=jp": { local: "../../cscam-sw/index.html?lang=jp", gh: "https://cih2000.github.io/cscam-sw/index.html?lang=jp" },
+    "https://cscam.co.kr/jp/index.html": { local: "../../cscam-hub/jp/index.html", gh: "https://cih2000.github.io/cscam-hub/jp/index.html" }
+  };
+  document.querySelectorAll(".family-bar-nav a, .drawer a, .brand-wordmark-link").forEach(function(a){
+    var href = a.getAttribute("href");
+    var entry = map[href];
+    if (entry) a.setAttribute("href", isLocal ? entry.local : entry.gh);
+  });
+})();
+</script>
+</body>
+</html>
