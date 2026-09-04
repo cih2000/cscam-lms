@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 /* ---------------- Header ---------------- */
 .site-header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 32px; left: 0; right: 0;
   z-index: 100;
   height: var(--header-h);
   display: flex;
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.header-spacer { height: var(--header-h); width: 100%; }
+.header-spacer { height: calc(var(--header-h) + 32px); width: 100%; }
 
 /* ---------------- Breadcrumb ---------------- */
 .breadcrumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 14px 0; font-size: 13px; color: var(--muted); }
@@ -162,7 +162,8 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .hero {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  height: 815px;
   background: var(--navy);
   color: var(--white);
   overflow: hidden;
@@ -222,7 +223,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 12px;
   font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
-  color: #cfe8ff; margin-bottom: 18px;
+  color: #cfe8ff; margin-bottom: 24px;
 }
 .hero-badge span {
   padding: 4px 10px; border: 1px solid rgba(127,196,255,.4); border-radius: 3px;
@@ -646,7 +647,7 @@ body.modal-open { overflow: hidden; }
   .contact-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 @media (max-width: 720px) {
-  .gnb { position: fixed; top: var(--header-h); left: 0; right: 0; background: var(--navy); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; transition: max-height .25s; }
+  .gnb { position: fixed; top: calc(var(--header-h) + 32px); left: 0; right: 0; background: var(--navy); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; transition: max-height .25s; }
   .gnb.open { max-height: 420px; }
   .gnb a { color: rgba(255,255,255,.85); padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,.08); width: 100%; }
   .nav-toggle { display: flex; }
