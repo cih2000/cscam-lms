@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, p { margin: 0; }
 .hero-inner { max-width: 640px; flex: 1 1 auto; }
 .hero-video {
   position: relative; z-index: 3; flex: 0 0 auto;
-  width: 400px; max-width: 37vw;
+  width: 520px; max-width: 48vw;
   aspect-ratio: 16/9;
   border-radius: var(--radius-md);
   overflow: hidden;
