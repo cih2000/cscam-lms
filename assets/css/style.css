@@ -693,6 +693,11 @@ body.modal-open { overflow: hidden; }
 .family-bar-nav a:hover { color: #fff; background: rgba(255,255,255,.08); }
 .family-bar-nav a.active { color: #fff; background: var(--blue); }
 .family-bar-nav span.disabled { color: #3a4556; cursor: not-allowed; }
+@media (max-width: 900px) {
+  /* justify-content:flex-end 상태에서 넘치면 시작 부분이 스크롤 영역 밖으로 밀려 좌우 드래그가 막히는 문제 -
+     모바일에서는 왼쪽 정렬로 바꿔 화면에 안 보이는 나머지 링크를 정상적으로 드래그해서 볼 수 있게 함 */
+  .family-bar-inner { justify-content: flex-start; padding: 0 16px; }
+}
 
 /* 01 LMS소개: comparison cards (011 / 012) */
 .compare-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
